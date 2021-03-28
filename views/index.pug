@@ -1,0 +1,22 @@
+doctype html
+head
+  link(rel='stylesheet' href='./style.css')
+
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Form
+center
+ div(classname='App')
+  p(class='heading') Terribly Tiny Tales
+  header(classname='App-header')
+    p(class='heading2') Enter Details
+    form(action='testAPI' method='get' id="form")
+      input(type='text' name='rollNo' autofocus placeholder="Enter roll numbers saperated by coma( , )  ")
+      br
+      br
+      p(class='heading3') Click on Submit to View Results
+      input(type='submit' value='Submit' id='submit')
+      br
+      p(id="msg")
+ script(src='./script.js')
